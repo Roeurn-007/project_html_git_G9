@@ -79,6 +79,7 @@
 }
 .btn:hover{
     background: pink;
+}
 *{
     margin: 0;
     padding: 0;
@@ -99,7 +100,7 @@ body{
 
 .container_menu{
     background: var(--white-color);
-    height: 80px;
+    height: 72px;
     display: flex;
     align-items: center;
     justify-content: space-around;
