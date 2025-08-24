@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background: lightgray;
+}
+
+:root{
+    --pink-color: #ce6679;
+    --bron-color: #343230;
+    --gray-color: rgb(78, 76, 76);
+    --white-color:#fffeff;
+}
+
+/* container menu code  */
+
+.container_menu{
+    background: var(--white-color);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* box-shadow: 0px 0px 4px 0px;
+    box-shadow: 0 .8px .8rem rgb(0, 0, 0.2); */
+}
+
+.logo span{
+    color: #c7576c;
+}
+.logo h1{
+    font-size: 42px;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 8px 24px;
+    font-size: 24px;
+    color: rgb(78, 76, 76);
+}
+
+.menu_icon{
+    display: flex;
+    gap: 32px;
+}
+.menu_icon .material-symbols-outlined {
+    font-size: 32px;
+    color: var(--bron-color);
+}
+
+.home{
+    background: url(../images/logo_background.png);
+    max-height: 100vh;
+    background-size: cover;  
+    height: 100vh;
+    width: 100%; 
+}
+
+
+/* Home code  */
+
+.home div h1{
+    font-size: 72px;
+    letter-spacing: 4px;
+}
+.home div{
+    display: inline-block;
+    margin: 220px 250px;
+}
+.home div span{
+    letter-spacing: 2px;
+    color: var(--pink-color);
+    font-size: 40px;
+}
+
+.home div p{
+    width: 500px;
+    margin: 20px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+}
+.btn1{
+    background: var(--bron-color);
+    padding: 10px 26px;
+    border: 1px solid var(--bron-color);
+    border-radius: 16px;
+    color: white;
+    font-size: 18px;
+}
+.btn1:hover{
+    background: var(--pink-color);
+    border: 1px solid var(--pink-color);
+}
