@@ -175,3 +175,58 @@ body{
     background: var(--pink-color);
     border: 1px solid var(--pink-color);
 }
+
+
+
+/* Container Product code  */
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.products h1{
+    text-align: center;
+    background: #e2758938;
+}
+
+.product_card{
+    width: 400px;
+    height: 450px;
+    background: var(--white-color);
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.product_card img{
+    width: 200px;
+    /* position: relative;
+    bottom: 30px; */
+}
+
+.products span{
+    color: var(--pink-color);
+    font-size: 24px;
+    font-weight: bold;
+}
+.gray{
+    color: var(--gray-color);
+}
+.discount{
+    color: var(--pink-color);
+    position: relative;
+    bottom: 420px;
+    left: -160px;
+    font-weight: bold;
+    font-size: 20px;
+    background: rgba(255, 192, 203, 0.726);
+    display: inline;
+    padding: 6px 16px;
+    border-radius: 8px;
+}
+.product_card p{
+   margin-top: 8px;
+}
