@@ -5,6 +5,8 @@
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+    background: white;
+    height: 100vh;
 }
 .heading{
     text-align: center;
@@ -229,4 +231,48 @@ body{
 }
 .product_card p{
    margin-top: 8px;
+}
+/* review */
+.Review{
+    background: white;
+    padding: 40px;
+
+}
+.box_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.box{
+    width: 88%;
+    height: auto;
+    background: #fffeff;
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: rgba(63, 65, 68, 0.2) 0px 8px 24px;
+
+}
+.box_container .box .user img{
+    width: 80px;
+    height: 80px;
+    border-radius: 60%;
+}
+.user{
+    display: flex;
+    align-items: center; 
+}
+.box_container .box .fa-star {
+    color: #c7576c;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.box_container .box p{
+    margin-bottom: 20px;
+}
+.box_container .box .user_info{
+    margin-left: 15px;
+}
+.box_container .box .user_info span{
+    color: gray;
 }
