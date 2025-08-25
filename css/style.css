@@ -276,3 +276,32 @@ body{
 .box_container .box .user_info span{
     color: gray;
 }
+
+/* Contact page code  */
+
+.contact_page{
+    display: flex;
+    background: var(--white-color);
+    justify-content: center;
+    align-items: center;
+}
+.contact_page img{
+    width: 700px;
+}
+
+.form-contact input{
+    margin: 8px 0;
+    width: 500px;
+    padding: 14px 10px;
+    border-radius: 4px;
+    border: 1.5px solid var(--bron-color);
+}
+.form-contact textarea{
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1.5px solid var(--bron-color);
+}
+.messages{
+    padding: 8px 11px;
+    width: 500px;
+}
