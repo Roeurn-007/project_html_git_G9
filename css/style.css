@@ -82,6 +82,8 @@
 .btn:hover{
     background: pink;
 }
+
+
 *{
     margin: 0;
     padding: 0;
@@ -177,6 +179,60 @@ body{
     background: var(--pink-color);
     border: 1px solid var(--pink-color);
 }
+/* Responsive Design homepage start */
+
+@media (max-width: 720px) {
+  .container_menu {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .menu{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .menu a {
+    font-size: 20px;
+    padding: 6px 8px;
+  }
+
+  .menu_icon {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    margin-top: 8px;
+  }
+
+  .menu_icon .material-symbols-outlined {
+    font-size: 24px;
+  }
+
+  .home {
+    padding-bottom: 120px; 
+  }
+}
+/* Responsive Design homepage end */
+
+
+
 
 
 
