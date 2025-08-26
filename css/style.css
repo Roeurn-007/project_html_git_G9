@@ -305,3 +305,23 @@ body{
     padding: 8px 11px;
     width: 500px;
 }
+
+
+/* Footer code  */
+
+footer{
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    padding: 48px 0;
+}
+.flex_direction{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+.flex_direction a{
+    color: var(--bron-color);
+    text-decoration: none;
+}
