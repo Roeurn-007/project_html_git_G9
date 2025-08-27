@@ -179,7 +179,6 @@ body{
 }
 
 
-
 /* Container Product code  */
 
 .products{
@@ -187,6 +186,8 @@ body{
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
+    background:rgba(255, 255, 255, 0.836);
+    padding: 40px 0;
 }
 .products h1{
     text-align: center;
