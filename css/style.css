@@ -1,3 +1,6 @@
+
+/* style homepage start */
+
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +21,7 @@ body{
 
 .container_menu{
     background: var(--white-color);
-    height: 80px;
+    height: 72px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -54,7 +57,7 @@ body{
     max-height: 100vh;
     background-size: cover;  
     height: 100vh;
-    width: 100%; 
+    /* width: 100%;  */
 }
 
 
@@ -93,3 +96,369 @@ body{
     background: var(--pink-color);
     border: 1px solid var(--pink-color);
 }
+/* Responsive Design homepage start */
+@media (max-width:800px) {
+    .home{
+        background: url(../images/logo_background.png);
+        max-height: 100vh;
+        background-size: cover;  
+        height: 200vh;
+    }
+}
+/* Responsive Design homepage end */
+/* style homepage start */
+
+/* style aboutpage start */
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background: white;
+    height: 100vh;
+}
+.heading{
+    text-align: center;
+    font-size: 50px ;
+    color:rgb(80, 73, 73) ;
+    padding: 10px;
+    background: #eed5d9;
+}
+.heading span{
+    color: rgb(230, 144, 144);
+    font-size: 50px ;
+    font-weight: 600px;
+}
+.about .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+    padding-bottom: 3px;
+}
+.about .row .container{
+    flex:1 1 40px;
+    position: relative;
+    justify-items: center;
+}
+.about .row .container img{
+    border-radius: 50%;
+    justify-items: center;
+    width: 90%;
+    border: 15px solid rgb(230, 144, 144);
+    box-shadow: 0 .8px 1.5rem rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+.about .row .container h3{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    font-size: 50px ;
+    background: white;
+    width: 95%;
+    text-align: center;
+    padding: 10px 10px;
+    mix-blend-mode: screen;
+}
+.about .row .content{
+    flex:1 1 80px;
+    padding: 20px;
+    text-align: center;
+}
+.about .row .content h3{
+    font-size: 40px;
+    color: rgb(80, 73, 73);  
+}
+.about .row .content p{
+    font-size: 20px;
+    color: rgb(100, 74, 74);  
+    padding:5px 0;
+    padding-top: 1px;
+    line-height: 1.5;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(128, 94, 94);
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition:.3s ease;
+}
+.btn:hover{
+    background: pink;
+}
+/* Responsive Design aboutpage start */
+@media (max-width:800px){
+
+    .about .row .container{
+        padding-right: 1%;
+    }
+    .about .row{
+        flex-direction: column;
+    }
+    .container_menu .menu a{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .about .row .container img{
+        width: 500px;
+        height: 420px;
+        margin-top: 32px;
+    }
+    .about .row .container h3{
+        font-size: 40px;
+        width: 80vw;
+        position: absolute;
+        margin-top: 50px;
+        left: -20px;
+    }
+    .about .row .content{
+        width: 80%;
+        position: relative;
+    }
+    .about .row .content h3{
+        width: 100%;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .about .row .content p{
+        width: 100%;
+        font-size: 20px;
+    }
+    .about .row .content a{
+        margin-top: 16px;
+        margin-bottom: 70px;
+        font-size: 22px;
+        padding: 16px 40px;
+    }
+    .about .row .container h3{
+        top: 40%;
+    }
+}
+/* Responsive Design aboutpage end */
+/* style aboutpage end */
+
+
+/* styele Productpage start */
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    background: white;
+    padding: 40px;
+}
+.products h1{
+    text-align: center;
+    background: #e2758938;
+}
+
+.product_card{
+    width: 400px;
+    height: 450px;
+    background:rgb(233, 224, 224);
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 80px 64px;
+}
+
+.product_card img{
+    width: 200px;
+}
+
+.products span{
+    color: var(--pink-color);
+    font-size: 24px;
+    font-weight: bold;
+}
+.gray{
+    color: var(--gray-color);
+}
+.discount{
+    color: var(--pink-color);
+    position: relative;
+    bottom: 400px;
+    left: -130px;
+    font-weight: bold;
+    font-size: 20px;
+    background: rgba(255, 192, 203, 0.726);
+    display: inline;
+    padding: 6px 16px;
+    border-radius: 8px;
+}
+.product_card p{
+   margin-top: 8px;
+}
+/* Responsive Design Productpage start */
+@media (max-width:800px) {
+    .products{
+        padding:0px 50px;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 40px;
+    }
+    .product_card{
+        width: 320px;
+        height: 420px;
+    }
+    .product_card img{
+        width: 150px;
+    }
+    .discount{
+        bottom: 320px;
+        left: -100px;
+        font-weight: bold;
+        font-size: 20px;
+        background: rgba(255, 192, 203, 0.726);
+        display: inline;
+        padding: 6px 16px;
+        border-radius: 8px;
+    }
+}
+/* Responsive Design Productpage end */
+/* styele Productpage end */
+
+/*style reviewpage start */
+.Review{
+    background: white;
+    padding: 40px;
+}
+.box_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.box{
+    width: 88%;
+    height: auto;
+    background:rgb(233, 224, 224);
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: rgba(63, 65, 68, 0.2) 0px 8px 24px;
+
+}
+.box_container .box .user img{
+    width: 80px;
+    height: 80px;
+    border-radius: 60%;
+}
+.user{
+    display: flex;
+    align-items: center; 
+}
+.box_container .box .fa-star {
+    color: #c7576c;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.box_container .box p{
+    margin-bottom: 20px;
+}
+.box_container .box .user_info{
+    margin-left: 15px;
+}
+.box_container .box .user_info span{
+    color: gray;
+}
+/* Responsive Design Reviewpage start */
+
+@media (max-width:800px) {
+    .box_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        column-gap: 15px;
+    }
+    
+}
+/* Responsive Design Reviewpage end */
+/*style reviewpage end */
+
+/* style Contactpage start  */
+
+.contact_page{
+    display: flex;
+    background: var(--white-color);
+    justify-content: center;
+    align-items: center;
+}
+.contact_page img{
+    width: 700px;
+}
+
+.form-contact input{
+    margin: 8px 0;
+    width: 500px;
+    padding: 14px 10px;
+    border-radius: 4px;
+    border: 1.5px solid var(--bron-color);
+}
+.form-contact textarea{
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1.5px solid var(--bron-color);
+}
+.messages{
+    padding: 8px 11px;
+    width: 500px;
+}
+/* Responsive Design Contactpage end */
+@media (max-width:800px) {
+    .contact_page{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0px 40px;
+    }
+    .contact_page img{
+        width: 700px;
+    }
+    .form-contact input{
+        margin: 8px 0;
+        width: 700px;
+        padding: 25px 10px;
+        font-size: 20px;
+    
+    }
+    .messages{
+        padding: 8px 11px;
+        width: 700px;
+        font-size: 20px;
+    }
+
+}
+/* Responsive Design Contactpage end */
+/* style content end */
+
+/*style footer start  */
+
+footer{
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    padding: 48px 0;
+}
+.flex_direction{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+.flex_direction a{
+    color: var(--bron-color);
+    text-decoration: none;
+}
+@media (max-width:800px) {
+    footer{
+        padding: 25px;
+    } 
+}
+/* style footer end  */
