@@ -57,7 +57,7 @@ body{
     max-height: 100vh;
     background-size: cover;  
     height: 100vh;
-    width: 100%; 
+    /* width: 100%;  */
 }
 
 
@@ -96,59 +96,17 @@ body{
     background: var(--pink-color);
     border: 1px solid var(--pink-color);
 }
-/* style homepage start */
-
 /* Responsive Design homepage start */
-
-@media (max-width: 720px) {
-  .container_menu {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .menu{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: var(--white-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-    z-index: 1000;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .menu a {
-    font-size: 20px;
-    padding: 6px 8px;
-  }
-
-  .menu_icon {
-    display: flex;
-    justify-content: end;
-    gap: 20px;
-    margin-top: 8px;
-  }
-
-  .menu_icon .material-symbols-outlined {
-    font-size: 24px;
-  }
-
-  .home {
-    padding-bottom: 120px; 
-  }
+@media (max-width:800px) {
+    .home{
+        background: url(../images/logo_background.png);
+        max-height: 100vh;
+        background-size: cover;  
+        height: 200vh;
+    }
 }
 /* Responsive Design homepage end */
+/* style homepage start */
 
 /* style aboutpage start */
 
@@ -167,7 +125,7 @@ body{
     font-size: 50px ;
     color:rgb(80, 73, 73) ;
     padding: 10px;
-    margin: 10px 0px;
+    background: #eed5d9;
 }
 .heading span{
     color: rgb(230, 144, 144);
@@ -198,7 +156,7 @@ body{
 }
 .about .row .container h3{
     position: absolute;
-    top: 40%;
+    top: 50%;
     transform: translateY(-60%);
     font-size: 50px ;
     background: white;
@@ -236,17 +194,66 @@ body{
 .btn:hover{
     background: pink;
 }
+/* Responsive Design aboutpage start */
+@media (max-width:800px){
+
+    .about .row .container{
+        padding-right: 1%;
+    }
+    .about .row{
+        flex-direction: column;
+    }
+    .container_menu .menu a{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .about .row .container img{
+        width: 500px;
+        height: 420px;
+        margin-top: 32px;
+    }
+    .about .row .container h3{
+        font-size: 40px;
+        width: 80vw;
+        position: absolute;
+        margin-top: 50px;
+        left: -20px;
+    }
+    .about .row .content{
+        width: 80%;
+        position: relative;
+    }
+    .about .row .content h3{
+        width: 100%;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .about .row .content p{
+        width: 100%;
+        font-size: 20px;
+    }
+    .about .row .content a{
+        margin-top: 16px;
+        margin-bottom: 70px;
+        font-size: 22px;
+        padding: 16px 40px;
+    }
+    .about .row .container h3{
+        top: 40%;
+    }
+}
+/* Responsive Design aboutpage end */
 /* style aboutpage end */
 
 
-
 /* styele Productpage start */
-
 .products{
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
+    background: white;
+    padding: 40px;
 }
 .products h1{
     text-align: center;
@@ -256,17 +263,15 @@ body{
 .product_card{
     width: 400px;
     height: 450px;
-    background: var(--white-color);
+    background:rgb(233, 224, 224);
     text-align: center;
     border-radius: 8px;
     padding: 16px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 80px 64px;
 }
 
 .product_card img{
     width: 200px;
-    /* position: relative;
-    bottom: 30px; */
 }
 
 .products span{
@@ -280,8 +285,8 @@ body{
 .discount{
     color: var(--pink-color);
     position: relative;
-    bottom: 420px;
-    left: -160px;
+    bottom: 400px;
+    left: -130px;
     font-weight: bold;
     font-size: 20px;
     background: rgba(255, 192, 203, 0.726);
@@ -292,14 +297,39 @@ body{
 .product_card p{
    margin-top: 8px;
 }
+/* Responsive Design Productpage start */
+@media (max-width:800px) {
+    .products{
+        padding:0px 50px;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 40px;
+    }
+    .product_card{
+        width: 320px;
+        height: 420px;
+    }
+    .product_card img{
+        width: 150px;
+    }
+    .discount{
+        bottom: 320px;
+        left: -100px;
+        font-weight: bold;
+        font-size: 20px;
+        background: rgba(255, 192, 203, 0.726);
+        display: inline;
+        padding: 6px 16px;
+        border-radius: 8px;
+    }
+}
+/* Responsive Design Productpage end */
 /* styele Productpage end */
-
 
 /*style reviewpage start */
 .Review{
     background: white;
     padding: 40px;
-
 }
 .box_container{
     display: grid;
@@ -309,7 +339,7 @@ body{
 .box{
     width: 88%;
     height: auto;
-    background: #fffeff;
+    background:rgb(233, 224, 224);
     padding: 40px 20px;
     border-radius: 20px;
     margin-top: 20px;
@@ -339,6 +369,18 @@ body{
 .box_container .box .user_info span{
     color: gray;
 }
+/* Responsive Design Reviewpage start */
+
+@media (max-width:800px) {
+    .box_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        column-gap: 15px;
+    }
+    
+}
+/* Responsive Design Reviewpage end */
 /*style reviewpage end */
 
 /* style Contactpage start  */
@@ -369,9 +411,34 @@ body{
     padding: 8px 11px;
     width: 500px;
 }
+/* Responsive Design Contactpage end */
+@media (max-width:800px) {
+    .contact_page{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0px 40px;
+    }
+    .contact_page img{
+        width: 700px;
+    }
+    .form-contact input{
+        margin: 8px 0;
+        width: 700px;
+        padding: 25px 10px;
+        font-size: 20px;
+    
+    }
+    .messages{
+        padding: 8px 11px;
+        width: 700px;
+        font-size: 20px;
+    }
 
+}
+/* Responsive Design Contactpage end */
+/* style content end */
 
-/* Footer code  */
+/*style footer start  */
 
 footer{
     background: rgb(255, 255, 255);
@@ -389,4 +456,9 @@ footer{
     color: var(--bron-color);
     text-decoration: none;
 }
-/* style Contactpage end  */
+@media (max-width:800px) {
+    footer{
+        padding: 25px;
+    } 
+}
+/* style footer end  */
